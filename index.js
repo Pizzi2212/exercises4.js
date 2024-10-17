@@ -32,7 +32,7 @@ button.addEventListener ("click", ()=>{
         const randomizer = Math.floor(Math.random()* extractedNumbers.length)
         const random = extractedNumbers[randomizer]
         extractedNumbers.splice(random, 1)
-        const cells = document.querySelectorAll("h3");
+        const cells = document.querySelectorAll("h3")
         
         for (let i = 0; i < cells.length; i++) {
             if (parseInt(cells[i].innerText) === random) {
@@ -40,19 +40,19 @@ button.addEventListener ("click", ()=>{
                 break
             }
         }
-    } else {
-        alert("Tutti i numeri sono stati estratti!");
-    }
+   
+ 
     
-    
-})
+}})
+
+
 
 const hostcell = ()=>{
 const sectionPlayer = document.getElementById("player")   
-const casualNumber = []
 
-for (let i= 0;i<25;i++){
-    let casualNumber = (Math.floor(Math.random()*90))
+
+for (let i= 1;i<25;i++){
+    let casualNumber = (Math.floor(Math.random()*91))
     const cellPlayer = document.createElement('div')
 cellPlayer.classList.add('cellPlayer')
 const numberPlayer = document.createElement('h5')
